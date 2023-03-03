@@ -4,32 +4,12 @@
   "version": "1.0.0",
   "description": "Generates an image based on the currently playing song on Spotify.",
   "icons": [
-    {
-      "src": "icons/icon16.png",
-      "sizes": "16x16",
-      "type": "image/png"
-    },
-    {
-      "src": "icons/icon32.png",
-      "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "icons/icon48.png",
-      "sizes": "48x48",
-      "type": "image/png"
-    },
-    {
-      "src": "icons/icon128.png",
-      "sizes": "128x128",
-      "type": "image/png"
-    }
   ],
   "background": {
     "service_worker": "background.js"
   },
   "permissions": ["activeTab", "https://api.openai.com/"],
   "content_security_policy": {
-    "extension_pages": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+    "extension_pages": "script-src 'self'; object-src 'self'"
   }
 }
