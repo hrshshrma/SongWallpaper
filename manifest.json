@@ -9,8 +9,14 @@
   "background": {
     "service_worker": "background.js"
   },
+  "action": {},
   "permissions": ["activeTab", "https://api.openai.com/"],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "matches": ["https://chat.openai.com/*"]
+    }
+  ]
 }
