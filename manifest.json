@@ -5,7 +5,7 @@
   "description": "Generates an image based on the currently playing song on Spotify.",
   "icons": [
     {
-      "src": "songWallpaper.png",
+      "src": "images/songWallpaper-16.png",
       "sizes": "16x16",
       "type": "image/png"
     }
