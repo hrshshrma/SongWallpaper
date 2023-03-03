@@ -1,22 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "Spotify Image Generator",
+  "name": "Spotify Song Wallpaper Generator",
   "version": "1.0.0",
   "description": "Generates an image based on the currently playing song on Spotify.",
   "icons": {
       "16": "images/songWallpaper-16.png"
   },
+  "action": {},
   "background": {
     "service_worker": "background.js"
   },
-  "action": {},
-  "permissions": ["activeTab", "https://api.openai.com/"],
+  "permissions": ["activeTab"],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
-  },
-  "web_accessible_resources": [
-    {
-      "matches": ["https://chat.openai.com/*"]
-    }
-  ]
+  }
 }

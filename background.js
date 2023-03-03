@@ -1,4 +1,3 @@
-chrome.browserAction.onClicked.addListener(function (tab) {
-    chrome.tabs.create({ url: 'popup.html' });
-  });
-  
+chrome.action.onClicked.addListener((tab) => {
+  chrome.tabs.create({url: 'popup/index.html'});
+});
