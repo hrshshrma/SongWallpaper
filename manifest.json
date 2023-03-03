@@ -4,6 +4,11 @@
   "version": "1.0.0",
   "description": "Generates an image based on the currently playing song on Spotify.",
   "icons": [
+    {
+      "src": "songWallpaper.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
   ],
   "background": {
     "service_worker": "background.js"
